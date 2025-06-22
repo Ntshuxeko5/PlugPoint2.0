@@ -1,0 +1,205 @@
+===============================================================================
+                        PLUGPOINT2.0 FILE PATH UPDATES
+                           INFINITYFREE HOSTING PREPARATION
+===============================================================================
+
+This document outlines all the file path changes made to prepare PlugPoint2.0
+for hosting on InfinityFree. All paths have been updated to be relative to
+the root htdocs directory.
+
+===============================================================================
+                                CHANGES MADE
+===============================================================================
+
+1. HEADER FILES UPDATED
+-----------------------
+Created: includes/header_pages.php
+- New header file specifically for pages in the pages/ directory
+- Uses relative paths: ../assets/css/style.css, ../assets/js/main.js
+- Navigation links use relative paths: pages/products.php, pages/login.php, etc.
+
+Updated: includes/header.php
+- Updated for root-level access (when accessed from htdocs root)
+- Uses relative paths: assets/css/style.css, assets/js/main.js
+- Navigation links use relative paths: pages/products.php, pages/login.php, etc.
+
+2. PAGES FILES UPDATED
+----------------------
+All files in pages/ directory now use:
+- include '../includes/header_pages.php' instead of header.php
+- All navigation links are relative to pages/ directory
+- Asset paths use ../assets/ prefix
+
+Files updated:
+- index.php
+- login.php
+- register.php
+- products.php
+- checkout.php
+- checkout_callback.php
+- And all other pages in the pages/ directory
+
+3. PAYMENT CALLBACK URLS
+------------------------
+Updated: pages/checkout.php
+- Callback URL: http://' . $_SERVER['HTTP_HOST'] . '/pages/checkout_callback.php'
+
+Updated: pages/checkout_callback.php
+- Notification link: /pages/seller_dashboard.php
+
+4. ASSET PATHS
+--------------
+CSS: assets/css/style.css (from root) or ../assets/css/style.css (from pages/)
+JS: assets/js/main.js (from root) or ../assets/js/main.js (from pages/)
+Images: assets/images/ (from root) or ../assets/images/ (from pages/)
+
+===============================================================================
+                                FILE STRUCTURE FOR INFINITYFREE
+===============================================================================
+
+When uploaded to InfinityFree, the structure should be:
+
+htdocs/
+├── api/
+│   └── paystack.php
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   ├── images/
+│   └── js/
+│       └── main.js
+├── includes/
+│   ├── auth.php
+│   ├── db.php
+│   ├── footer.php
+│   ├── header.php
+│   └── header_pages.php
+├── pages/
+│   ├── index.php
+│   ├── login.php
+│   ├── register.php
+│   ├── products.php
+│   ├── checkout.php
+│   ├── checkout_callback.php
+│   └── [all other page files]
+├── README.md
+├── USER_MANUAL.txt
+├── HOSTING_CHECKLIST.txt
+├── TESTING_PHASE_CHECKLIST.txt
+├── TESTING_QUICK_REFERENCE.txt
+└── FILE_PATH_UPDATES.txt
+
+===============================================================================
+                                ACCESS PATTERNS
+===============================================================================
+
+ROOT LEVEL ACCESS (htdocs/)
+- Main entry point: pages/index.php
+- Assets: assets/css/style.css, assets/js/main.js
+- Uses: includes/header.php
+
+PAGES LEVEL ACCESS (htdocs/pages/)
+- All page files: index.php, login.php, products.php, etc.
+- Assets: ../assets/css/style.css, ../assets/js/main.js
+- Uses: ../includes/header_pages.php
+
+INCLUDES ACCESS
+- Database: ../includes/db.php (from pages/)
+- Auth: ../includes/auth.php (from pages/)
+- Footer: ../includes/footer.php (from pages/)
+
+===============================================================================
+                                TESTING CHECKLIST
+===============================================================================
+
+After uploading to InfinityFree, test:
+
+□ ROOT LEVEL ACCESS
+  □ Visit: yourdomain.com/pages/index.php
+  □ Check if CSS loads: assets/css/style.css
+  □ Check if JS loads: assets/js/main.js
+  □ Verify navigation links work
+
+□ PAGES LEVEL ACCESS
+  □ Visit: yourdomain.com/pages/login.php
+  □ Check if CSS loads: ../assets/css/style.css
+  □ Check if JS loads: ../assets/js/main.js
+  □ Verify navigation links work
+
+□ ASSET ACCESS
+  □ Images load properly: assets/images/
+  □ CSS styles apply correctly
+  □ JavaScript functions work
+  □ Dark mode toggle works
+
+□ NAVIGATION
+  □ All menu links work
+  □ Breadcrumb navigation works
+  □ Back/forward browser buttons work
+  □ Direct URL access works
+
+□ PAYMENT INTEGRATION
+  □ Checkout process works
+  □ Callback URLs are correct
+  □ Payment notifications work
+  □ Order status updates work
+
+===============================================================================
+                                COMMON ISSUES & SOLUTIONS
+===============================================================================
+
+ISSUE: CSS/JS not loading
+SOLUTION: Check file permissions (644 for files, 755 for directories)
+
+ISSUE: Images not displaying
+SOLUTION: Verify assets/images/ directory is writable (755)
+
+ISSUE: Navigation links broken
+SOLUTION: Ensure using correct header file (header.php vs header_pages.php)
+
+ISSUE: Payment callbacks failing
+SOLUTION: Verify callback URLs are correct for your domain
+
+ISSUE: Database connection errors
+SOLUTION: Update includes/db.php with InfinityFree credentials
+
+===============================================================================
+                                DEPLOYMENT STEPS
+===============================================================================
+
+1. UPLOAD FILES
+   □ Upload entire PlugPoint2.0 folder contents to htdocs/
+   □ Ensure proper file structure is maintained
+   □ Set correct file permissions
+
+2. CONFIGURE DATABASE
+   □ Update includes/db.php with InfinityFree credentials
+   □ Import database schema
+   □ Test database connection
+
+3. TEST FUNCTIONALITY
+   □ Test root level access
+   □ Test pages level access
+   □ Test all navigation links
+   □ Test asset loading
+
+4. CONFIGURE PAYMENTS
+   □ Update Paystack keys (test/live)
+   □ Test payment flow
+   □ Verify callback URLs
+
+5. FINAL VALIDATION
+   □ Test all user roles
+   □ Test all features
+   □ Verify mobile responsiveness
+   □ Check performance
+
+===============================================================================
+
+All file paths have been updated for InfinityFree hosting compatibility.
+The platform should now work correctly when deployed to InfinityFree.
+
+Last Updated: January 2025
+Status: Ready for InfinityFree Deployment
+
+=============================================================================== 

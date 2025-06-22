@@ -1,0 +1,274 @@
+html, body {
+  background-color: #f8f9fa !important;
+  color: #181a2a !important;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+:root {
+  --primary-blue: #3b82f6;
+  --primary-purple: #a21caf;
+  --bg-dark: #181a2a;
+  --bg-light: #23263a;
+  --text-light: #f4f4f4;
+  --text-dark: #181a2a;
+  --bg-lightmode: #f8f9fa;
+  --card-light: #fff;
+  --border-light: #e0e0e0;
+  --hero-light-blue: #e0e7ff;
+  --hero-light-purple: #f3e8ff;
+}
+
+body.dark-mode {
+  background-color: var(--bg-dark) !important;
+  color: var(--text-light) !important;
+}
+
+body:not(.dark-mode) {
+  background-color: var(--bg-lightmode) !important;
+  color: var(--text-dark) !important;
+}
+
+.container, .row, .col, .card, .navbar, .footer, .modal-content, .dropdown-menu, .popover, .offcanvas, .accordion, .tab-content, .breadcrumb, .progress, .form-control, .form-select, .table, .list-group-item, .dropdown-item, .input-group-text {
+  color: inherit;
+}
+
+body.dark-mode .container,
+body.dark-mode .row,
+body.dark-mode .col,
+body.dark-mode .card,
+body.dark-mode .navbar,
+body.dark-mode .footer,
+body.dark-mode .modal-content,
+body.dark-mode .dropdown-menu,
+body.dark-mode .popover,
+body.dark-mode .offcanvas,
+body.dark-mode .accordion,
+body.dark-mode .tab-content,
+body.dark-mode .breadcrumb,
+body.dark-mode .progress,
+body.dark-mode .form-control,
+body.dark-mode .form-select,
+body.dark-mode .table,
+body.dark-mode .list-group-item,
+body.dark-mode .dropdown-item,
+body.dark-mode .input-group-text {
+  color: var(--text-light) !important;
+}
+
+body:not(.dark-mode) .card,
+body:not(.dark-mode) .modal-content,
+body:not(.dark-mode) .dropdown-menu,
+body:not(.dark-mode) .popover,
+body:not(.dark-mode) .offcanvas,
+body:not(.dark-mode) .accordion,
+body:not(.dark-mode) .tab-content,
+body:not(.dark-mode) .breadcrumb,
+body:not(.dark-mode) .progress {
+  background: var(--card-light) !important;
+  color: var(--text-dark) !important;
+  border: 1px solid var(--border-light) !important;
+}
+
+body.dark-mode .card,
+body.dark-mode .modal-content,
+body.dark-mode .dropdown-menu,
+body.dark-mode .popover,
+body.dark-mode .offcanvas,
+body.dark-mode .accordion,
+body.dark-mode .tab-content,
+body.dark-mode .breadcrumb,
+body.dark-mode .progress {
+  background: var(--bg-light) !important;
+  color: var(--text-light) !important;
+  border: none !important;
+}
+
+.hero-gradient {
+  width: 100vw;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, var(--primary-blue) 0%, var(--primary-purple) 100%) !important;
+}
+body:not(.dark-mode) .hero-gradient {
+  background: linear-gradient(90deg, var(--hero-light-blue) 0%, var(--hero-light-purple) 100%) !important;
+}
+
+#darkModeToggle {
+  border: 2px solid #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  background: var(--bg-light);
+  color: var(--primary-blue);
+}
+body.dark-mode #darkModeToggle {
+  border: 2px solid #3b82f6;
+  background: var(--bg-dark);
+  color: #fff;
+}
+
+#heroDarkModeToggle {
+  border: 2px solid rgba(255,255,255,0.8);
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+#heroDarkModeToggle:hover {
+  background: rgba(255,255,255,0.2);
+  border-color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+body.dark-mode #heroDarkModeToggle {
+  border: 2px solid rgba(59,130,246,0.8);
+  background: rgba(59,130,246,0.1);
+  color: #fff;
+}
+body.dark-mode #heroDarkModeToggle:hover {
+  background: rgba(59,130,246,0.2);
+  border-color: #3b82f6;
+}
+
+.btn-primary, .btn-outline-primary {
+  background: linear-gradient(90deg, var(--primary-blue), var(--primary-purple)) !important;
+  border: none !important;
+  color: #fff !important;
+}
+.btn-outline-primary {
+  background: transparent !important;
+  border: 1px solid var(--primary-blue) !important;
+  color: var(--primary-blue) !important;
+}
+.btn-outline-primary:hover {
+  background: var(--primary-blue) !important;
+  color: #fff !important;
+}
+.btn-dark {
+  background: #181a2a !important;
+  color: #fff !important;
+  border: 1px solid #23263a !important;
+}
+body:not(.dark-mode) .btn-dark {
+  background: #f8f9fa !important;
+  color: #181a2a !important;
+  border: 1px solid #e0e0e0 !important;
+}
+
+body:not(.dark-mode) .table,
+body:not(.dark-mode) .table-dark,
+body:not(.dark-mode) .table-striped,
+body:not(.dark-mode) .table-hover,
+body:not(.dark-mode) .table-bordered {
+  background-color: var(--card-light) !important;
+  color: var(--text-dark) !important;
+}
+body:not(.dark-mode) .table-dark th,
+body:not(.dark-mode) .table-dark td,
+body:not(.dark-mode) .table th,
+body:not(.dark-mode) .table td {
+  background-color: var(--card-light) !important;
+  color: var(--text-dark) !important;
+}
+
+body:not(.dark-mode) .list-group-item,
+body:not(.dark-mode) .dropdown-item,
+body:not(.dark-mode) .input-group-text {
+  background-color: var(--card-light) !important;
+  color: var(--text-dark) !important;
+}
+
+input, textarea, select, .form-control, .form-select {
+  background-color: #fff !important;
+  color: #181a2a !important;
+  border: 1px solid #3b82f6 !important;
+}
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select,
+body.dark-mode .form-control,
+body.dark-mode .form-select {
+  background-color: #23263a !important;
+  color: #f4f4f4 !important;
+  border: 1px solid #3b82f6 !important;
+}
+input::placeholder, textarea::placeholder {
+  color: #b0b3c6 !important;
+}
+
+a, .nav-link, .navbar-brand, .breadcrumb-item a {
+  color: var(--primary-blue) !important;
+}
+a:hover, .nav-link:hover, .navbar-brand:hover, .breadcrumb-item a:hover {
+  color: var(--primary-purple) !important;
+}
+
+.alert {
+  background-color: #23263a !important;
+  color: #f4f4f4 !important;
+  border: 1px solid var(--primary-blue) !important;
+}
+body:not(.dark-mode) .alert {
+  background-color: #fff !important;
+  color: #181a2a !important;
+  border: 1px solid var(--primary-blue) !important;
+}
+
+.badge {
+  background: var(--primary-blue) !important;
+  color: #fff !important;
+}
+
+.form-label, .input-group-text {
+  color: #b0b3c6 !important;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #23263a;
+}
+::-webkit-scrollbar-thumb {
+  background: #3b82f6;
+  border-radius: 4px;
+} 
+
+/* --- Ensure all text inside components is correct color in both modes --- */
+body.dark-mode .card, body.dark-mode .modal-content, body.dark-mode .dropdown-menu, body.dark-mode .popover, body.dark-mode .offcanvas, body.dark-mode .accordion, body.dark-mode .tab-content, body.dark-mode .breadcrumb, body.dark-mode .progress, body.dark-mode .form-control, body.dark-mode .form-select, body.dark-mode .table, body.dark-mode .list-group-item, body.dark-mode .dropdown-item, body.dark-mode .input-group-text {
+  color: var(--text-light) !important;
+}
+body:not(.dark-mode) .card, body:not(.dark-mode) .modal-content, body:not(.dark-mode) .dropdown-menu, body:not(.dark-mode) .popover, body:not(.dark-mode) .offcanvas, body:not(.dark-mode) .accordion, body:not(.dark-mode) .tab-content, body:not(.dark-mode) .breadcrumb, body:not(.dark-mode) .progress, body:not(.dark-mode) .form-control, body:not(.dark-mode) .form-select, body:not(.dark-mode) .table, body:not(.dark-mode) .list-group-item, body:not(.dark-mode) .dropdown-item, body:not(.dark-mode) .input-group-text {
+  color: var(--text-dark) !important;
+}
+
+/* Headings, paragraphs, and small text inside components */
+body.dark-mode .card h1, body.dark-mode .card h2, body.dark-mode .card h3, body.dark-mode .card h4, body.dark-mode .card h5, body.dark-mode .card h6, body.dark-mode .card p, body.dark-mode .card small,
+body.dark-mode .modal-content h1, body.dark-mode .modal-content h2, body.dark-mode .modal-content h3, body.dark-mode .modal-content h4, body.dark-mode .modal-content h5, body.dark-mode .modal-content h6, body.dark-mode .modal-content p, body.dark-mode .modal-content small {
+  color: var(--text-light) !important;
+}
+body:not(.dark-mode) .card h1, body:not(.dark-mode) .card h2, body:not(.dark-mode) .card h3, body:not(.dark-mode) .card h4, body:not(.dark-mode) .card h5, body:not(.dark-mode) .card h6, body:not(.dark-mode) .card p, body:not(.dark-mode) .card small,
+body:not(.dark-mode) .modal-content h1, body:not(.dark-mode) .modal-content h2, body:not(.dark-mode) .modal-content h3, body:not(.dark-mode) .modal-content h4, body:not(.dark-mode) .modal-content h5, body:not(.dark-mode) .modal-content h6, body:not(.dark-mode) .modal-content p, body:not(.dark-mode) .modal-content small {
+  color: var(--text-dark) !important;
+}
+
+/* Bootstrap utility classes for text color */
+body.dark-mode .text-muted, body.dark-mode .text-secondary, body.dark-mode .text-body, body.dark-mode .text-dark {
+  color: #b0b3c6 !important;
+}
+body:not(.dark-mode) .text-muted, body:not(.dark-mode) .text-secondary, body:not(.dark-mode) .text-body, body:not(.dark-mode) .text-light {
+  color: #6c757d !important;
+}
+
+/* Icon color fixes for light/dark mode */
+.bi {
+  color: var(--primary-blue) !important;
+  transition: color 0.2s;
+}
+body.dark-mode .bi {
+  color: #fff !important;
+}
+
+/* Ensure nav icons inherit nav-link color */
+.nav-link i, .navbar-brand i {
+  color: inherit !important;
+} 

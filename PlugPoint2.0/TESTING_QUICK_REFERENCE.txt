@@ -1,0 +1,258 @@
+===============================================================================
+                        PLUGPOINT2.0 TESTING QUICK REFERENCE
+===============================================================================
+
+This is a quick reference guide for the testing phase on InfinityFree.
+Keep this handy during your testing period.
+
+===============================================================================
+                                TESTING ENVIRONMENT INFO
+===============================================================================
+
+TESTING URL: _____________________________
+TESTING DATABASE: ________________________
+PAYSTACK TEST KEYS: _____________________
+TESTING START DATE: _____________________
+EXPECTED TESTING DURATION: 4 weeks
+
+===============================================================================
+                                QUICK TESTING TASKS
+===============================================================================
+
+DAILY CHECKS:
+□ Website loads properly
+□ Database connection working
+□ File uploads functioning
+□ Payment test transactions
+□ Error logs reviewed
+
+WEEKLY TASKS:
+□ Performance testing
+□ Security testing
+□ Mobile responsiveness check
+□ Cross-browser testing
+□ Bug fix deployment
+
+===============================================================================
+                                COMMON TESTING SCENARIOS
+===============================================================================
+
+USER REGISTRATION TEST:
+1. Register as buyer
+2. Register as seller
+3. Register as admin
+4. Test login/logout
+5. Test password reset
+
+PRODUCT MANAGEMENT TEST:
+1. Add product as seller
+2. Upload product image
+3. Check admin approval process
+4. Test product editing
+5. Test product deletion
+
+SHOPPING CART TEST:
+1. Add product to cart
+2. Remove from cart
+3. Add to wishlist
+4. Complete checkout
+5. Test payment processing
+
+PAYMENT TESTING:
+1. Use Paystack test cards
+2. Test successful payment
+3. Test failed payment
+4. Verify order status update
+5. Check payment callbacks
+
+MESSAGING TEST:
+1. Send message as buyer
+2. Reply as seller
+3. Test message notifications
+4. Check message history
+5. Test message deletion
+
+ADMIN FUNCTIONS TEST:
+1. Approve/reject products
+2. Manage users
+3. View orders
+4. Generate reports
+5. Monitor analytics
+
+===============================================================================
+                                PAYSTACK TEST CARDS
+===============================================================================
+
+SUCCESSFUL PAYMENT:
+- Card: 4084 0840 8408 4081
+- Expiry: Any future date
+- CVV: Any 3 digits
+- PIN: Any 4 digits
+
+FAILED PAYMENT:
+- Card: 4084 0840 8408 4082
+- Expiry: Any future date
+- CVV: Any 3 digits
+- PIN: Any 4 digits
+
+INSUFFICIENT FUNDS:
+- Card: 4084 0840 8408 4083
+- Expiry: Any future date
+- CVV: Any 3 digits
+- PIN: Any 4 digits
+
+===============================================================================
+                                PERFORMANCE TARGETS
+===============================================================================
+
+PAGE LOAD TIMES:
+- Homepage: < 3 seconds
+- Product pages: < 2 seconds
+- Search results: < 2 seconds
+- Checkout: < 3 seconds
+
+DATABASE PERFORMANCE:
+- Query execution: < 1 second
+- Connection time: < 500ms
+- Concurrent users: 10+
+
+FILE UPLOADS:
+- Image upload: < 5 seconds
+- Max file size: 5MB
+- Supported formats: JPG, PNG, GIF
+
+PAYMENT PROCESSING:
+- Payment initiation: < 2 seconds
+- Callback processing: < 5 seconds
+- Order status update: < 10 seconds
+
+===============================================================================
+                                SECURITY TESTING CHECKLIST
+===============================================================================
+
+AUTHENTICATION:
+□ Test invalid login attempts
+□ Test password strength
+□ Test session timeout
+□ Test role-based access
+
+INPUT VALIDATION:
+□ Test SQL injection attempts
+□ Test XSS attacks
+□ Test file upload security
+□ Test form validation
+
+AUTHORIZATION:
+□ Test unauthorized access
+□ Test privilege escalation
+□ Test data access controls
+□ Test admin functions
+
+===============================================================================
+                                MOBILE TESTING CHECKLIST
+===============================================================================
+
+RESPONSIVE DESIGN:
+□ Test on iPhone (various sizes)
+□ Test on Android (various sizes)
+□ Test on tablets
+□ Test landscape/portrait
+
+TOUCH INTERACTIONS:
+□ Test button taps
+□ Test form inputs
+□ Test image uploads
+□ Test payment process
+
+NAVIGATION:
+□ Test menu navigation
+□ Test search functionality
+□ Test product browsing
+□ Test checkout process
+
+===============================================================================
+                                BUG REPORTING TEMPLATE
+===============================================================================
+
+ISSUE TITLE: _____________________________
+PRIORITY: [Critical/High/Medium/Low]
+BROWSER: _____________________________
+DEVICE: _____________________________
+USER ROLE: [Buyer/Seller/Admin]
+
+DESCRIPTION:
+_________________________________________
+_________________________________________
+
+STEPS TO REPRODUCE:
+1. _____________________________
+2. _____________________________
+3. _____________________________
+
+EXPECTED BEHAVIOR:
+_________________________________________
+
+ACTUAL BEHAVIOR:
+_________________________________________
+
+SCREENSHOT: [Attach if applicable]
+ERROR MESSAGES: _________________________
+
+===============================================================================
+                                TESTING CONTACTS
+===============================================================================
+
+TECHNICAL SUPPORT:
+- Email: support@plugpoint.com
+- Phone: 011 557 7756
+
+INFINITYFREE SUPPORT:
+- Forum: https://forum.infinityfree.net
+- Documentation: https://infinityfree.net/docs
+
+PAYSTACK SUPPORT:
+- Email: support@paystack.com
+- Test Mode: https://paystack.com/docs/testing
+
+===============================================================================
+                                TESTING COMPLETION CHECKLIST
+===============================================================================
+
+FUNCTIONALITY:
+□ All user roles working
+□ All features functional
+□ Payment processing stable
+□ File uploads working
+□ Messaging system operational
+
+PERFORMANCE:
+□ Page load times acceptable
+□ Database performance good
+□ Mobile responsiveness verified
+□ Cross-browser compatibility confirmed
+
+SECURITY:
+□ Authentication secure
+□ Authorization working
+□ Input validation effective
+□ File uploads secure
+
+DOCUMENTATION:
+□ User manual updated
+□ Known issues documented
+□ Workarounds documented
+□ Support procedures ready
+
+READY FOR LIVE LAUNCH:
+□ All critical issues resolved
+□ Performance targets met
+□ Security requirements satisfied
+□ Stakeholder approval received
+
+===============================================================================
+
+Last Updated: _________________
+Next Review: _________________
+Test Lead: _________________
+
+=============================================================================== 

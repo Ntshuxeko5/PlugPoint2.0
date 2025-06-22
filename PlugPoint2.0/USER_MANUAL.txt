@@ -1,0 +1,473 @@
+===============================================================================
+                            PLUGPOINT2.0 USER MANUAL
+===============================================================================
+
+Welcome to PlugPoint2.0 - Your Complete C2C Ecommerce Platform!
+
+This manual will guide you through all the features and functionality available
+to different user types on the platform.
+
+===============================================================================
+                                TABLE OF CONTENTS
+===============================================================================
+
+1. GETTING STARTED
+   - Registration
+   - Login
+   - User Roles
+
+2. BUYER GUIDE
+   - Browsing Products
+   - Search and Filtering
+   - Shopping Cart
+   - Wishlist
+   - Making Purchases
+   - Order Tracking
+   - Product Reviews
+   - Messaging Sellers
+   - Profile Management
+
+3. SELLER GUIDE
+   - Subscription Plans
+   - Adding Products
+   - Managing Products
+   - Order Management
+   - Messaging Buyers
+   - Analytics Dashboard
+   - Profile Management
+
+4. ADMIN GUIDE
+   - User Management
+   - Product Management
+   - Order Management
+   - Reports and Analytics
+   - System Monitoring
+
+5. TROUBLESHOOTING
+   - Common Issues
+   - Support Contact
+
+===============================================================================
+                                1. GETTING STARTED
+===============================================================================
+
+REGISTRATION
+------------
+1. Visit the homepage and click "Register" or "Sign Up"
+2. Fill in your details:
+   - Full Name
+   - Email Address
+   - Password
+   - Choose your role (Buyer, Seller, or Admin)
+3. Click "Register" to create your account
+4. You'll be automatically logged in and redirected to your dashboard
+
+LOGIN
+-----
+1. Click "Login" in the navigation bar
+2. Enter your email and password
+3. Click "Login" to access your account
+
+USER ROLES
+----------
+- BUYER: Can browse, purchase, review products, and message sellers
+- SELLER: Can list products, manage orders, and communicate with buyers
+- ADMIN: Can manage users, products, orders, and view system analytics
+
+===============================================================================
+                                2. BUYER GUIDE
+===============================================================================
+
+BROWSING PRODUCTS
+-----------------
+1. Visit the homepage to see featured products
+2. Click "Products" in the navigation to browse all products
+3. Use the search bar to find specific items
+4. Filter products by:
+   - Category (Electronics, Fashion, etc.)
+   - Price range
+   - Rating (1-5 stars)
+   - Seller
+5. Sort products by:
+   - Newest first
+   - Price (low to high or high to low)
+   - Highest rated
+
+SEARCH AND FILTERING
+--------------------
+Advanced Search Options:
+- Search by product name or description
+- Filter by category (Electronics, Fashion, Home & Garden, etc.)
+- Set minimum and maximum price
+- Filter by seller name
+- Filter by rating (4+ stars, 3+ stars, etc.)
+- Sort results by various criteria
+
+SHOPPING CART
+-------------
+1. Click "Add to Cart" on any product
+2. View your cart by clicking the cart icon in the navigation
+3. In your cart, you can:
+   - Review items and prices
+   - Remove items you don't want
+   - See the total cost
+   - Proceed to checkout
+
+WISHLIST
+--------
+1. Click "Add to Wishlist" on products you like
+2. View your wishlist by clicking the heart icon
+3. Remove items from wishlist when needed
+4. Move items from wishlist to cart when ready to buy
+
+MAKING PURCHASES
+----------------
+1. Add items to your cart
+2. Click "Proceed to Checkout"
+3. Review your order details
+4. Complete payment through Paystack
+5. You'll receive confirmation of your order
+6. Track your order status in your dashboard
+
+ORDER TRACKING
+--------------
+1. Click "Orders" in your dashboard
+2. View all your past and current orders
+3. Check order status:
+   - Pending: Payment being processed
+   - Paid: Payment confirmed
+   - Shipped: Order dispatched
+   - Completed: Order delivered
+   - Cancelled: Order cancelled
+
+PRODUCT REVIEWS
+---------------
+1. After purchasing a product, you can leave a review
+2. Rate the product from 1-5 stars
+3. Write a detailed review about your experience
+4. Reviews help other buyers make informed decisions
+5. You can only review products you've purchased
+
+MESSAGING SELLERS
+-----------------
+1. Click "Message Seller" on any product page
+2. Or access messages through your dashboard
+3. Send questions about products before buying
+4. Communicate about orders after purchase
+5. View message history and mark as read
+
+PROFILE MANAGEMENT
+------------------
+1. Click your profile picture/name in the navigation
+2. Update your personal information:
+   - Name
+   - Phone number
+   - Address
+   - Profile picture
+3. Change your password if needed
+4. View your order history and statistics
+
+===============================================================================
+                                3. SELLER GUIDE
+===============================================================================
+
+SUBSCRIPTION PLANS
+------------------
+Before listing products, you need an active subscription:
+
+BASIC PLAN (R299/month)
+- List up to 10 products
+- Basic analytics
+- Customer support
+
+PRO PLAN (R599/month)
+- List up to 50 products
+- Advanced analytics
+- Priority support
+- Featured product placement
+
+ENTERPRISE PLAN (R999/month)
+- Unlimited products
+- Full analytics suite
+- Premium support
+- Custom branding options
+
+To subscribe:
+1. Go to "Subscription" in your dashboard
+2. Choose your preferred plan
+3. Complete payment through Paystack
+4. Start listing products immediately
+
+ADDING PRODUCTS
+---------------
+1. Ensure you have an active subscription
+2. Click "Add Product" in your dashboard
+3. Fill in product details:
+   - Product name
+   - Description
+   - Price (in ZAR)
+   - Category
+   - Product image (JPG, PNG, GIF)
+4. Click "Add Product" to submit
+5. Products require admin approval before going live
+
+MANAGING PRODUCTS
+-----------------
+1. View all your products in your dashboard
+2. Check product status:
+   - Pending: Awaiting admin approval
+   - Active: Available for purchase
+   - Rejected: Not approved (check admin feedback)
+3. Edit product details if needed
+4. Remove products that are no longer available
+
+ORDER MANAGEMENT
+----------------
+1. View incoming orders in your dashboard
+2. Order details include:
+   - Buyer information
+   - Product details
+   - Order amount
+   - Order status
+3. Update order status as you process orders
+4. Communicate with buyers about their orders
+
+MESSAGING BUYERS
+----------------
+1. Respond to buyer inquiries through the messaging system
+2. Send updates about orders
+3. Answer questions about your products
+4. Build relationships with customers
+
+ANALYTICS DASHBOARD
+-------------------
+Your seller dashboard shows:
+- Total products listed
+- Active vs pending products
+- Total sales revenue
+- Number of orders
+- Average product rating
+- Recent orders
+- Top selling products
+- Monthly sales chart
+
+PROFILE MANAGEMENT
+------------------
+1. Update your seller profile information
+2. Add business details
+3. Upload a professional profile picture
+4. Set up contact information for customers
+
+===============================================================================
+                                4. ADMIN GUIDE
+===============================================================================
+
+USER MANAGEMENT
+---------------
+1. Access "Manage Users" from admin dashboard
+2. View all registered users
+3. Filter users by role (Buyer, Seller, Admin)
+4. Search users by name or email
+5. Actions available:
+   - Change user roles
+   - Suspend/activate users
+   - View user details
+
+PRODUCT MANAGEMENT
+------------------
+1. Access "Manage Products" from admin dashboard
+2. View all products in the system
+3. Filter by category, status, or seller
+4. Actions available:
+   - Approve pending products
+   - Reject products with reason
+   - Delete inappropriate products
+   - View product details
+
+ORDER MANAGEMENT
+----------------
+1. Access "View Orders" from admin dashboard
+2. View all orders across the platform
+3. Filter by status, date range, or buyer
+4. Update order statuses
+5. View detailed order information
+6. Monitor payment processing
+
+REPORTS AND ANALYTICS
+---------------------
+1. Access "Reports" from admin dashboard
+2. View comprehensive platform statistics:
+   - Total users (buyers, sellers, admins)
+   - Total products and active listings
+   - Total orders and revenue
+   - User distribution
+   - Order status breakdown
+   - Top selling products
+   - Category distribution
+   - Recent activity
+3. Filter reports by date range
+4. Export data for external analysis
+
+SYSTEM MONITORING
+-----------------
+Monitor platform health:
+- User registration trends
+- Product listing activity
+- Order processing efficiency
+- Payment success rates
+- System performance metrics
+
+===============================================================================
+                                5. TROUBLESHOOTING
+===============================================================================
+
+COMMON ISSUES AND SOLUTIONS
+---------------------------
+
+CAN'T LOG IN?
+- Check your email and password
+- Ensure caps lock is off
+- Try resetting your password
+- Contact support if account is locked
+
+PAYMENT NOT PROCESSING?
+- Check your internet connection
+- Ensure Paystack is properly configured
+- Verify payment details are correct
+- Contact support for payment issues
+
+PRODUCT NOT APPEARING?
+- Check if product is approved by admin
+- Verify subscription is active
+- Ensure all required fields are filled
+- Contact admin for approval status
+
+ORDER STATUS NOT UPDATING?
+- Allow time for processing
+- Check seller communication
+- Contact seller directly
+- Escalate to admin if needed
+
+CAN'T UPLOAD IMAGES?
+- Check file size (max 5MB)
+- Ensure file type is supported (JPG, PNG, GIF)
+- Verify directory permissions
+- Contact support for technical issues
+
+MESSAGING NOT WORKING?
+- Check internet connection
+- Refresh the page
+- Clear browser cache
+- Contact support if persistent
+
+SUPPORT CONTACT
+---------------
+For technical support and questions:
+- Email: support@plugpoint.com
+- Phone: 011 557 7756
+- Address: 3021 Cling fish street, Sky City, Alberton, 1449
+
+When contacting support, please provide:
+- Your user ID or email
+- Description of the issue
+- Steps to reproduce the problem
+- Screenshots if applicable
+- Browser and device information
+
+===============================================================================
+                                PLATFORM FEATURES
+===============================================================================
+
+SECURITY FEATURES
+-----------------
+- Secure password hashing
+- SQL injection protection
+- XSS attack prevention
+- CSRF protection
+- Secure file uploads
+- Input validation and sanitization
+
+PAYMENT SECURITY
+----------------
+- Paystack secure payment processing
+- PCI DSS compliance
+- Encrypted payment data
+- Secure transaction handling
+- Payment verification system
+
+MOBILE RESPONSIVE
+-----------------
+- Works on all devices
+- Mobile-optimized interface
+- Touch-friendly navigation
+- Responsive product images
+- Mobile payment processing
+
+PERFORMANCE FEATURES
+--------------------
+- Optimized database queries
+- Image compression
+- Efficient pagination
+- Caching strategies
+- Fast loading times
+
+===============================================================================
+                                BEST PRACTICES
+===============================================================================
+
+FOR BUYERS
+----------
+- Read product descriptions carefully
+- Check seller ratings and reviews
+- Ask questions before purchasing
+- Keep communication professional
+- Leave honest reviews after purchase
+
+FOR SELLERS
+-----------
+- Provide accurate product descriptions
+- Upload high-quality images
+- Respond to messages promptly
+- Process orders quickly
+- Maintain good customer service
+- Keep product information updated
+
+FOR ADMINS
+----------
+- Review products fairly and quickly
+- Monitor platform activity regularly
+- Respond to support requests promptly
+- Maintain system security
+- Keep platform policies updated
+
+===============================================================================
+                                UPDATES AND MAINTENANCE
+===============================================================================
+
+PLATFORM UPDATES
+----------------
+- Regular security updates
+- Feature enhancements
+- Performance improvements
+- Bug fixes and patches
+- User interface improvements
+
+MAINTENANCE SCHEDULE
+--------------------
+- Regular database backups
+- System performance monitoring
+- Security audits
+- User data protection
+- Platform optimization
+
+===============================================================================
+
+Thank you for using PlugPoint2.0!
+
+This manual is regularly updated. For the latest version, visit our website
+or contact support.
+
+Last updated: January 2025
+Version: 2.0
+
+=============================================================================== 
